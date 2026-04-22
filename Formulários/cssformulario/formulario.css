@@ -1,0 +1,72 @@
+/*reset básico para remover as margens e padding padrão */
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/*estilizando o corpo da page*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(86, 109, 108);
+    display: flex;
+    /*ativa flex box*/
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: white;
+    padding: 25 px;
+    border-radius: 25px;
+    width: 500px;
+    box-shadow: 0 4px 10px black;
+
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+
+}
+
+label {
+
+    margin-bottom: 5px;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    
+
+
+}
+input{
+    width: 40%;
+    padding: 2px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    
+   
+
+}
+
+#Enviar{
+    background-color: blue;
+color: white;
+font-weight: bold;
+border-radius: 5px;
+width: 100px;
+
+}
