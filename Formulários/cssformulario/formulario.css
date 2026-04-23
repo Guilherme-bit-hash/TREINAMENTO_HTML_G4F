@@ -32,7 +32,7 @@ form {
     border-radius: 25px;
     width: 500px;
     box-shadow: 0 4px 10px black;
-
+    
 }
 
 h1 {
@@ -58,6 +58,7 @@ input{
     border-radius: 20px;
     margin-bottom: 5px;
     
+    
    
 
 }
@@ -68,5 +69,5 @@ color: white;
 font-weight: bold;
 border-radius: 5px;
 width: 100px;
-
 }
+
