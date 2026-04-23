@@ -15,7 +15,9 @@ body {
     /*ativa flex box*/
     justify-content: center;
     align-items: center;
-    
+    height: 100vh;
+    box-sizing: border-box;
+    font-size: 18px;
 
 }
 
@@ -27,18 +29,27 @@ div {
 }
 
 form {
-    background-color: white;
+    background-color: rgb(148, 134, 134);
     padding: 25 px;
     border-radius: 25px;
-    width: 500px;
-    box-shadow: 0 4px 10px black;
-    
+    width: 350px;
+    box-shadow: 0 9px 17px rgb(251, 230, 230);
+    justify-content: center;
+    align-items: center;
+    display: block;
+    text-align: center;
+    height: 665px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+
 }
 
 h1 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     font-size: 30px;
+    margin-top: 20px;
+    
 
 }
 
@@ -47,27 +58,28 @@ label {
     margin-bottom: 5px;
     font-weight: bold;
     display: block;
-    margin-top: 10px;
+    margin-top: 15px
     
-
-
 }
 input{
-    width: 40%;
+    width: 92%;
     padding: 2px;
-    border-radius: 20px;
+    border-radius: 8px;
     margin-bottom: 5px;
-    
-    
-   
+    background-color: rgb(205, 205, 205);
+    border: 3px solid rgb(0, 0, 0)
 
 }
 
 #Enviar{
-    background-color: blue;
+background-color: blue;
 color: white;
 font-weight: bold;
 border-radius: 5px;
 width: 100px;
+cursor: pointer;
 }
 
+#Enviar:hover{
+    background-color: rgb(0, 255, 13);
+}
