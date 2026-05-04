@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo_var_Document</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input{
+        padding: 10px;
+        margin: 10px;
+
+        }
+        button{
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #resultado{
+            margin-top: 20px;
+            font-size: 18px;
+            color:greenyellow;
+        }
+        
+    </style>
+</head>
+<body>
+      <h1>exemplo_Document</h1>
+
+      <label for=""> Digite seu nome:  </label>
+      <input type="text" name="" id="nome">
+
+      <button onclick="mostrarNome()">mostrar</button>
+
+      <p id="resultado"></p>
+
+
+      <script>
+        function mostrarNome(){
+            var nome = document.getElementById("nome").value;
+
+            document.getElementById("resultado").innerHTML = "olá, " + nome ;
+             console.log("seu nome é : " + nome);
+             window.alert("seu nome é : " + nome);
+
+        }
+      </script>
+
+</body>
+</html>
