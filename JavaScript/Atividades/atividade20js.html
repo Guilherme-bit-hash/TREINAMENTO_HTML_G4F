@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 20</title>
+</head>
+<body>
+<h1>Atividade 20 Const</h1>
+
+<label>Digite seu nome: </label>
+<input type="text" id="name">
+<label>Digite um número: </label>
+<input type="number" id="num1">
+<label>Digite um número: </label>
+<input type="number" id="num2">
+<label>Digite um número: </label>
+<input type="number" id="num3">
+
+<button onclick="aperte()"> Enviar</button>
+<p id="aperte"></p>
+
+<script>
+    const nome = " sua multiplicação resultou em: "
+    function aperte(){
+       let name = document.getElementById("name").value;
+       let num1 = parseFloat(document.getElementById("num1").value);
+       let num2 = parseFloat(document.getElementById("num2").value);
+       let num3 = parseFloat(document.getElementById("num3").value);
+
+       let aperte = num1 * num2 * num3;
+
+       document.getElementById("aperte").innerHTML = "parabéns " + name + nome + aperte;
+       window.alert("Bem vindo " + name);
+
+
+    }
+</script>
+
+    
+</body>
+</html>
