@@ -1,0 +1,29 @@
+body{
+    background-color: black;
+}
+
+
+
+.form-boot{
+text-align: center;
+width: 600px;
+padding: 15px;
+height: 500px;
+margin: auto;
+margin-top: 30px;
+box-shadow:  0 0 70px green;
+flex-direction: column;
+font-weight: bold;
+border-radius: 30px;
+background-color: cadetblue  ;
+}
+
+
+
+.btn:hover{
+    background-color: greenyellow;
+}
+
+.btn{
+    margin-top: 30px;
+}
