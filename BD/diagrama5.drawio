@@ -222,7 +222,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="iO2YWV7oO1Dpl24emSDW" name="Página-3">
-    <mxGraphModel dx="2341" dy="678" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2575" dy="814" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -271,7 +271,7 @@
         <mxCell id="FCozBwdASsLeqSrE2I6o-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="n" vertex="1">
           <mxGeometry height="30" width="60" x="480" y="260" as="geometry" />
         </mxCell>
-        <mxCell id="FCozBwdASsLeqSrE2I6o-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;n&lt;/div&gt;" vertex="1">
+        <mxCell id="FCozBwdASsLeqSrE2I6o-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;1&lt;/div&gt;" vertex="1">
           <mxGeometry height="30" width="60" x="750" y="260" as="geometry" />
         </mxCell>
         <mxCell id="FCozBwdASsLeqSrE2I6o-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="n" vertex="1">
@@ -334,7 +334,7 @@
         <mxCell id="FCozBwdASsLeqSrE2I6o-29" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Nome" vertex="1">
           <mxGeometry height="80" width="120" x="790" y="420" as="geometry" />
         </mxCell>
-        <mxCell id="FCozBwdASsLeqSrE2I6o-30" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Data" vertex="1">
+        <mxCell id="FCozBwdASsLeqSrE2I6o-30" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="CódigoProduto" vertex="1">
           <mxGeometry height="80" width="120" x="520" y="580" as="geometry" />
         </mxCell>
         <mxCell id="FCozBwdASsLeqSrE2I6o-33" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Telefone" vertex="1">
@@ -345,6 +345,24 @@
             <mxPoint x="110" y="310" as="sourcePoint" />
             <mxPoint x="160" y="260" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="k2ah211UrxXe9Sgu9xwf-1" edge="1" parent="1" source="k2ah211UrxXe9Sgu9xwf-3" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="470" y="540" as="sourcePoint" />
+            <mxPoint x="520" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k2ah211UrxXe9Sgu9xwf-2" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="k2ah211UrxXe9Sgu9xwf-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="640" y="490" as="sourcePoint" />
+            <mxPoint x="690" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k2ah211UrxXe9Sgu9xwf-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="NomeProduto" vertex="1">
+          <mxGeometry height="80" width="120" x="380" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="k2ah211UrxXe9Sgu9xwf-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Preço" vertex="1">
+          <mxGeometry height="80" width="120" x="660" y="520" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
