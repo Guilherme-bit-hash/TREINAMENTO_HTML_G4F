@@ -1,8 +1,9 @@
 <?php
+
 $host = "localhost";
 $usuario = "root";
 $senha = "senac";
-$banco = "banco_consul";
+$banco = "formulario";
 $porta = "3307";
 
 
@@ -14,6 +15,8 @@ $banco,
 $porta
 );
 
-$conexao -> connect_error
+if ($conexao->connect_error){
+    die("Erro na conexão " . $conexao->connect_error);
 
-?>
+
+}

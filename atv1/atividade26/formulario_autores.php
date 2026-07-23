@@ -16,47 +16,70 @@
 
 <form action="../atividade23/list.php" method="POST">
 <div class="num1">
-  <label id="label" class="col-sm-2 col-form-label">Digite o seu nome completo : </label>
+  <label id="label" class="col-sm-2 col-form-label">Nome</label>
   <div class="col-sm-10">
     <input type="name" name="nome">
   </div>
 </div>
 
-
 <div>
-  <label id="label" class="col-sm-2 col-form-label">Digite a sua idade : </label>
+  <label id="label" class="col-sm-2 col-form-label">Autor</label>
   <div class="col-sm-10">
-    <input type="number" name="idade">
+    <input type="number" name="quantidade">
   </div>
 </div>
  
 
- <div>
-  <label id="label" class="col-sm-2 col-form-label">email: </label>
-  <div class="col-sm-10">
-    <input type="text" name="email">
-  </div>
-</div>
 
-
-<div>
-  <label id="label" class="col-sm-2 col-form-label">Telefone : </label>
-  <div class="col-sm-10">
-    <input type="number" name="telefone">
-  </div>
-</div>
- 
 
 
 
 <div class="num5">
-  <label id="label" class="col-sm-2 col-form-label">Cidade: </label>
+  <label id="label" class="col-sm-2 col-form-label">Editora</label>
   <div class="col-sm-10">
-    <input type="" id="input"  name="cidade">
+    <input type="" id="input"  name="preço">
   </div>
 </div>
- <button type="submit">Enviar</button> 
 
+
+
+<div class="num5">
+  <label id="label" class="col-sm-2 col-form-label">Ano de Pubicação</label>
+  <div class="col-sm-10">
+    <input type="" id="input"  name="preço">
+  </div>
+</div>
+
+
+<div class="num5">
+  <label id="label" class="col-sm-2 col-form-label">Quantidade de páginas</label>
+  <div class="col-sm-10">
+    <input type="" id="input"  name="preço">
+  </div>
+</div>
+
+
+
+<div class="num5">
+  <label id="label" class="col-sm-2 col-form-label">Editora</label>
+  <div class="col-sm-10">
+    <input type="" id="input"  name="preço">
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <button type="submit">Enviar</button> 
 
 </form>
 

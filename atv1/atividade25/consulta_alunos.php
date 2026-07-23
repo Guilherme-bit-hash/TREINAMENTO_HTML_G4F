@@ -1,8 +1,8 @@
 <?php
 
-include "banco_consul.php";
+include "banco_alunos.php";
 
-$sql = "SELECT * FROM banco_consul";
+$sql = "SELECT * FROM consulta_alunos";
 
 $resultado = $conexao ->query($sql);
 

@@ -1,0 +1,295 @@
+body{
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #1a1a2e, #0f0c29);
+    background-size: 400% 400%;
+    animation: gradientShift 12s ease infinite;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+@keyframes gradientShift{
+    0%{ background-position: 0% 50%; }
+    50%{ background-position: 100% 50%; }
+    100%{ background-position: 0% 50%; }
+}
+
+/* Card do formulário */
+form{
+    position: relative;
+    background-color: rgba(20, 20, 35, 0.85);
+    backdrop-filter: blur(8px);
+    padding: 30px;
+    border-radius: 14px;
+    border: 1px solid rgba(0, 200, 255, 0.4);
+    animation: slideUp 0.6s ease-out, pulse 3.5s ease-in-out infinite 0.6s;
+    z-index: 10;
+}
+
+@keyframes slideUp{
+    from{
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes pulse{
+    0%, 100%{
+        transform: scale(1);
+        box-shadow:
+            0 0 15px rgba(0, 200, 255, 0.4),
+            0 0 30px rgba(0, 200, 255, 0.2),
+            0 4px 20px rgba(0,0,0,0.5);
+    }
+    50%{
+        transform: scale(1.02);
+        box-shadow:
+            0 0 30px rgba(0, 200, 255, 0.75),
+            0 0 60px rgba(0, 200, 255, 0.4),
+            0 4px 25px rgba(0,0,0,0.5);
+    }
+}
+
+form::before{
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border-radius: 16px;
+    padding: 2px;
+    background: linear-gradient(120deg, #00c6ff, #0d6efd, #a020f0, #00c6ff);
+    background-size: 300% 300%;
+    animation: rotateBorder 6s linear infinite;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+@keyframes rotateBorder{
+    0%{ background-position: 0% 50%; }
+    100%{ background-position: 300% 50%; }
+}
+
+/* Título "Cadastro" */
+h2{
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #00c6ff, #0d6efd, #a020f0, #00c6ff);
+    background-size: 300% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shineText 4s linear infinite, titleGlow 2.5s ease-in-out infinite;
+}
+
+@keyframes shineText{
+    to{ background-position: 300% center; }
+}
+
+@keyframes titleGlow{
+    0%, 100%{ filter: drop-shadow(0 0 4px rgba(0, 198, 255, 0.5)); }
+    50%{ filter: drop-shadow(0 0 14px rgba(160, 32, 240, 0.8)); }
+}
+
+/* Campos aparecendo em sequência */
+.mb-3{
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.mb-3:nth-of-type(1){ animation-delay: 0.2s; }
+.mb-3:nth-of-type(2){ animation-delay: 0.35s; }
+.mb-3:nth-of-type(3){ animation-delay: 0.5s; }
+.mb-3:nth-of-type(4){ animation-delay: 0.65s; }
+.mb-3:nth-of-type(5){ animation-delay: 0.8s; }
+
+@keyframes fadeIn{
+    from{ opacity: 0; transform: translateY(10px); }
+    to{ opacity: 1; transform: translateY(0); }
+}
+
+.form-label{
+    font-weight: 600;
+    color: #b8c4d9;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.form-control{
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 200, 255, 0.3);
+    color: white;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
+}
+
+.form-control::placeholder{
+    color: #7b8aa3;
+}
+
+.form-control:focus{
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: #00c6ff;
+    box-shadow: 0 0 12px rgba(0, 198, 255, 0.6);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.form-control:focus + label,
+.mb-3:focus-within .form-label{
+    color: #00c6ff;
+}
+
+.form-control:invalid:not(:placeholder-shown){
+    border-color: #dc3545;
+    animation: shake 0.3s ease;
+}
+
+@keyframes shake{
+    0%, 100%{ transform: translateX(0); }
+    25%{ transform: translateX(-4px); }
+    75%{ transform: translateX(4px); }
+}
+
+/* Botão Enviar */
+.btn-primary{
+    position: relative;
+    overflow: hidden;
+    border: none;
+    background: linear-gradient(90deg, #0d6efd, #00c6ff, #a020f0, #0d6efd);
+    background-size: 300% auto;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    animation: buttonGradient 5s linear infinite, pulseBtn 3.5s ease-in-out infinite;
+    transition: box-shadow 0.3s ease, transform 0.1s ease;
+}
+
+@keyframes buttonGradient{
+    to{ background-position: 300% center; }
+}
+
+@keyframes pulseBtn{
+    0%, 100%{ transform: scale(1); }
+    50%{ transform: scale(1.03); }
+}
+
+.btn-primary:hover{
+    box-shadow: 0 0 20px rgba(0, 198, 255, 0.7);
+    background: linear-gradient(90deg, #0d6efd, #00c6ff, #a020f0, #0d6efd);
+    background-size: 300% auto;
+}
+
+.btn-primary:active{
+    transform: scale(0.97) !important;
+}
+
+.btn-primary::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.5), transparent);
+    transform: skewX(-25deg);
+    transition: left 0.6s ease;
+}
+
+.btn-primary:hover::after{
+    left: 125%;
+}
+
+/* Leopardo correndo */
+.leopard-runner{
+    position: fixed;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.leopard{
+    position: absolute;
+    width: 70px;
+    height: 40px;
+    animation: run-across 6s linear infinite;
+}
+
+@keyframes run-across{
+    0%{ left: -100px; }
+    100%{ left: 110%; }
+}
+
+.leopard .body{
+    position: absolute;
+    width: 45px;
+    height: 20px;
+    background: #e8a33d;
+    border-radius: 50% 60% 60% 50%;
+    top: 8px;
+    left: 12px;
+    box-shadow:
+        inset -6px -3px 0 -2px #1a1a1a,
+        inset 6px 4px 0 -3px #1a1a1a,
+        inset 14px -2px 0 -3px #1a1a1a;
+}
+
+.leopard .head{
+    position: absolute;
+    width: 16px;
+    height: 14px;
+    background: #e8a33d;
+    border-radius: 50% 60% 50% 50%;
+    top: 4px;
+    left: 50px;
+    box-shadow: inset 3px 3px 0 -1px #1a1a1a;
+}
+
+.leopard .tail{
+    position: absolute;
+    width: 26px;
+    height: 6px;
+    background: #e8a33d;
+    border-radius: 10px;
+    top: 10px;
+    left: -4px;
+    transform-origin: right center;
+    animation: tailWag 0.3s ease-in-out infinite alternate;
+}
+
+@keyframes tailWag{
+    from{ transform: rotate(-15deg); }
+    to{ transform: rotate(10deg); }
+}
+
+.leopard .leg{
+    position: absolute;
+    width: 5px;
+    height: 16px;
+    background: #d4922f;
+    border-radius: 3px;
+    top: 22px;
+}
+
+.leg1{ left: 16px; animation: legFrontRun 0.3s ease-in-out infinite; }
+.leg2{ left: 24px; animation: legFrontRun 0.3s ease-in-out infinite 0.15s; }
+.leg3{ left: 38px; animation: legBackRun 0.3s ease-in-out infinite; }
+.leg4{ left: 46px; animation: legBackRun 0.3s ease-in-out infinite 0.15s; }
+
+@keyframes legFrontRun{
+    0%, 100%{ transform: rotate(25deg); }
+    50%{ transform: rotate(-25deg); }
+}
+
+@keyframes legBackRun{
+    0%, 100%{ transform: rotate(-25deg); }
+    50%{ transform: rotate(25deg); }
+}

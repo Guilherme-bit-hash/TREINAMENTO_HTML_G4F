@@ -20,4 +20,5 @@ $candidatos = [
    echo "o total de aprovados é : ", $aprovados;
 
 
+
 ?>
